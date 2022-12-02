@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet"></link>
+    <title>LAGUNA, PH</title>
+</head>
+<body>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        
+            }
+
+        body {
+            background: linear-gradient(to top,#053213,#3e8956);
+        }
+
+        .nuv {
+            font-weight: bold;
+        }
+
+        .foods {
+            width: 80%;
+            margin: auto;
+        }
+
+
+    </style>
+    <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper green">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html"><i class="material-icons">home</i></a></li>
+            <li><a href="#slider"><i class="material-icons">expand_less</i></a></li>
+            <li><a href="#spots">Adventure</a></li>
+            <li><a href="#foods">Foods</a></li>
+            <li><a href="#more.html"></a></li>
+            <li><a href="#more.html"></a></li>
+        </ul>
+        </div>
+    </nav>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large green">
+            <i class="large material-icons">settings</i>
+        </a>
+        <ul>
+            <li><a href="index.html" class="btn-floating red"><i class="material-icons">logout</i></a></li>
+            <li><a href="#message" class="btn-floating blue"><i class="material-icons">chat</i></a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+
+        <div class="slider" id="slider">
+            <ul class="slides">
+            <li>
+                <img src="one.jpg">
+                <div class="caption center-align">
+                    <br><br><br><br><br>
+                <h3 class="nuv">The best place to unwind</h3>
+                <h5 class="light grey-text text-lighten-3">Bato Springs Resort</h5>
+                </div>
+            </li>
+            <li>
+                <img src="two.jpg">
+                <div class="caption left-align">
+                <h3 class="nuv">Adventure awaits</h3>
+                <h5 class="light grey-text text-lighten-3">Pagsanjan Falls</h5>
+                </div>
+            </li>
+            <li>
+                <img src="three.jpg">
+                <div class="caption right-align">
+                    <br><br><br><br><br>
+                <h3 class="nuv">The magic lives forever!</h3>
+                <h5 class="light grey-text text-lighten-3">Enchanted Kingdom</h5>
+                </div>
+            </li>
+            <li>
+                <img src="four.jpg">
+                <div class="caption center-align">
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                <h5 class="nuv">Where people and nature thrive</h5>
+                <h6 class="light grey-text text-lighten-3">Nuvali</h6>
+                </div>
+            </li>
+            <li>
+                <img src="five.jpg">
+                <div class="caption right-align">
+                <h3 class="nuv">History unveiled</h3>
+                <h5 class="light grey-text text-lighten-3">Rizal Shrine</h5>
+                </div>
+            </li>
+            <li>
+                <img src="six.jpg">
+                <div class="caption left-align">
+                    <br><br><br><br>
+                <h4 class="nuv">Enjoy a wonderful, <br> nature-filled <br> with your kids</h4>
+                <h5 class="light grey-text text-lighten-3">Sta. Elena Fun Farm</h5>
+                </div>
+            </li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div class="row" id="spots">
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" width="100%" src="spot1.png">
+                <center>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Bato Springs Resort</a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" width="100%" src="spot2.png">
+                <center>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Mountain Lake Resort</a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" width="100%" src="spot3.png">
+                <center>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Hulugan Falls</a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+        <div class="row" id="spots">
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" width="100%" src="spot4.png">
+                <center>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Mount Makiling</a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" width="100%" src="spot5.png">
+                <center>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Taytay Falls</a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" width="100%" src="spot6.png">
+                <center>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Hidden Valley Springs</a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="foods">
+        <div class="row" id="foods">
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Buko Pie" width="100%" src="food1.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Espasol" width="100%" src="food2.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Kesong Puti" width="100%" src="food3.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+        </div>
+
+        <div class="row" id="foods">
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Puto Biñan" width="100%" src="food4.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Mernel's Cake" width="100%" src="food5.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Uraro" width="100%" src="food6.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+        </div>
+
+        <div class="row" id="foods">
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Monay Bae" width="100%" src="food7.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Broas" width="100%" src="food8.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+            <div class="col s4 m4 l4">
+                <img class="materialboxed" data-caption="Kinulob na Itik" width="100%" src="food9.png">
+                <br>
+                <center>
+                <div class="switch">
+                    <label>
+                        Dislike
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Like
+                    </label>
+                </div>
+                </center>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <footer class="page-footer green">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h6 class="white-text" id="message">Leave us a comment!</h6>
+                    <textarea class="white-text" cols="50">Type here...
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            No copyright infrigement intended.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+    crossorigin="anonymous"></script>
+        
+    <!--Compiled and Mini-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <script>
+        $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton();
+        });
+        $(document).ready(function(){
+        $('.slider').slider();
+        });
+        $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        });
+        $(document).ready(function(){
+        $('.modal').modal();
+        });
+    </script>
+
+
+</body>
+</html>

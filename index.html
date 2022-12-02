@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet"></link>
+    <title>paraiso.</title>
+
+</head>
+<body>
+    <style>
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .bodeh {
+            background: #082f33;
+        }
+
+        section {
+            background: linear-gradient(#000000,#082f33);
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top,#082f33,transparent);
+            z-index: 99;
+        }
+
+        section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .header{
+            position: absolute;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            color: white;
+            z-index: 999; 
+        }
+
+        #button {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 30px;
+            border-radius: 40px;
+            background: white;
+            color: black;
+            font-size: 1.0em;
+            z-index: 12;
+            transform: translateY(100px);
+        }
+
+        #button2 {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 30px;
+            border-radius: 40px;
+            background: white;
+            color: black;
+            font-size: 1.0em;
+            transform: translateY(10px);
+        }
+
+        #sec {
+            position: relative;
+            padding: 100px;
+            background: #082f33;
+        }
+
+        .laguna {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #links {
+            color: black;
+            font-weight: bold;
+            text-decoration-line: underline;
+        }
+
+        .spots {
+            background: linear-gradient(to bottom,#082f33,#3b6367);
+        }
+
+        #row1 {
+            margin: auto;
+            width: 80%;
+            padding: 0%;
+        }
+
+        #row2 {
+            margin: auto;
+            width: 80%;
+        }
+
+        #row3 {
+            margin: auto;
+            width: 50%;
+        }
+
+        .lag {
+            color: white;  
+        }
+
+
+</style>
+    
+    <section id="top">
+        <h1 class="header">P A R A I S O</h1>
+        <a href="#first" id="button" class="hoverable">Take me there!</a>
+        <img src="mountains.png" id="mountains">
+        <img src="front.png" id="front">
+    </section>
+
+    <div class=bodeh>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="row" id="first">
+            <div class="responsive center">
+                <iframe width="676" height="380" src="https://www.youtube.com/embed/VrvdUowPQpo" title="The Beauty of the Laguna Province (Tour Guiding)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+                <center>
+                    <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('open')">OPEN ME</a>
+                    <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('close')">
+                        <i class="material-icons">close</i>
+                    </a>
+                </center>
+                <center>
+                    <a href="more.html" id="button2" target="_blank">Tell me more!</a>
+                </center>
+        </div>
+        
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div> 
+
+    <div class="fixed-action-btn direction-top active">
+        <a id="menu" class="btn btn-floating btn-large cyan">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+
+    <div class="tap-target-wrapper">
+        <div class="tap-target cyan" data-target="menu">
+            <div class="tap-target-content white-text">
+                <br>
+                <h5 class="laguna">Laguna</h5>
+                <p>Laguna is a province in the Philippines situated in the 
+                    CALABARZON region occupying the central section of Luzon. 
+                    Its capital is the Municipality of Santa Cruz.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!--JQuery CDN-->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+        crossorigin="anonymous"></script>
+    
+        <!--Compiled and Mini-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        });
+
+        $(document).ready(function(){
+        $('.tap-target').tapTarget();
+        });
+
+    </script>
+
+</body>
+</html>
